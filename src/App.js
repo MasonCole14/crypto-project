@@ -7,6 +7,7 @@ import Signin from "./routes/SignIn";
 import Signup from "./routes/SignUp";
 import Account from "./routes/Account";
 import axios from "axios";
+import CoinPage from "./routes/CoinPage";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -29,6 +30,9 @@ function App() {
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/account" element={<Account />} />
+        <Route path="/coin/:coindId" element={<CoinPage />}>
+          <Route path=":coinId" />
+        </Route>
       </Routes>
     </ThemeProvider>
   );
