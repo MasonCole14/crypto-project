@@ -3,8 +3,8 @@ import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
-import Signin from "./routes/SignIn";
-import Signup from "./routes/SignUp";
+import SignIn from "./routes/SignIn";
+import SignUp from "./routes/SignUp";
 import Account from "./routes/Account";
 import axios from "axios";
 import CoinPage from "./routes/CoinPage";
@@ -28,8 +28,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home coins={coins} />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/account" element={<Account />} />
         <Route path="/coin/:coinId" element={<CoinPage />}>
           <Route path=":coinId" />
