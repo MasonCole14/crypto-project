@@ -8,11 +8,12 @@ import {
 } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 
-const userContext = createContext();
-const [user, setUser] = useState({});
 
-export const authContextProvider = ({ children }) => {
-  const signup = (email, password) => {
+const UserContext = createContext();
+
+export const AuthContextProvider = ({ children }) => {
+  const [user, setUser] = useState({});
+  const signUp = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password);
     return setDoc(doc(db, "users", email), {
       watchList: [],
@@ -35,12 +36,12 @@ export const authContextProvider = ({ children }) => {
   }, []);
 
   return (
-    <userContext.Provider value={{ signUp, signIn, logout, user }}>
+    <UserContext.Provider value={{ signUp, signIn, logout, user }}>
       {children}
-    </userContext.Provider>
+    </UserContext.Provider>
   );
 };
 
-export const userAuth = () => {
-  return useContext(userContext);
+export const UserAuth = () => {
+  return useContext(UserContext);
 };
