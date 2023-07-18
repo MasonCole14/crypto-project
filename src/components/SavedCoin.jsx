@@ -30,13 +30,15 @@ const SavedCoin = () => {
   return (
     <div>
       {coins?.length === 0 ? (
-        <p>
-          You don't have any coins saved. Please save a coin to add it to your
-          watch list.{" "}
-          <Link to="/">
-            Click <span className="text-accent">here</span> to seach coins.
-          </Link>
-        </p>
+        <div className="py-4">
+          <p className="py-4">You don't have any coins saved.</p>
+          <p className="py-4">Please save a coin to add it to your watch list.</p>
+          <p className="py-4">
+            <Link to="/">
+              Click <span className="text-accent">here</span> to seach coins.
+            </Link>
+          </p>
+        </div>
       ) : (
         <table className="w-full border-collapse text-center">
           <thead>
