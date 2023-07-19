@@ -17,10 +17,10 @@
 - Check out live [website](https://crypto-project-pearl.vercel.app/)
 
 ## Screenshots
-![screenshot of website 1](<screenshots/CDAD8E10-8197-4636-9BB7-4AD652AB3499_1_201_a.jpeg>)
-![screenshot of website 2](<screenshots/9A909EA3-9D2B-4A1B-B718-6EA8D72D03B2_1_201_a.jpeg>)
+![screenshot of website 1](<screenshots/CDAD8E10-8197-4636-9BB7-4AD652AB3499_1_105_c.jpeg>)
+![screenshot of website 2](<screenshots/9A909EA3-9D2B-4A1B-B718-6EA8D72D03B2_1_105_c.jpeg>)
 ![screenshot of website 3](<screenshots/A70883CC-A3CE-4849-A9E5-F92B928800EA_1_105_c.jpeg>)
-![screenshot of website 4](<screenshots/8D06726F-140E-43B8-AF1D-F80905B03098_1_105_c.jpeg>)
+![screenshot of website 4](<screenshots/8D06726F-140E-43B8-AF1D-F80905B03098_1_105_c.jpeg)
 
 ## Technologies used
 
