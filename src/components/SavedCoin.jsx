@@ -35,7 +35,7 @@ const SavedCoin = () => {
           <p className="py-4">Please save a coin to add it to your watch list.</p>
           <p className="py-4">
             <Link to="/">
-              Click <span className="text-accent">here</span> to seach coins.
+              Click <span className="text-accent font-bold">here</span> to seach coins.
             </Link>
           </p>
         </div>
